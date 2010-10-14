@@ -26,7 +26,7 @@ namespace Editor1
 
         public override bool Contains(int x, int y)
         {
-            return x >= X - Width/2 && x <= X + Width/2 && y >= Y - Height/2 && y <= Y + Height/2;
+            return x >= X - Width/2 && x <= X + Width/2 && y >= Y - Height/2 && y <= Y + Height/2; // Точка входит в прямоугольник
         }
     }
 }

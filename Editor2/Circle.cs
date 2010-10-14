@@ -10,6 +10,7 @@ namespace Editor1
 {
     class Circle : Element
     {
+        // Радиус круга
         public Int32 Radius
         {
             get { return radius; }
@@ -53,19 +54,19 @@ namespace Editor1
 
         public override bool Contains(int x, int y)
         {
-            return (X - x) * (X - x) + (Y - y) * (Y - y) <= Radius * Radius;
+            return (X - x) * (X - x) + (Y - y) * (Y - y) <= Radius * Radius; // Квадрат растояния от точки до центра меньше квадрата радуиса
         }
 
         public override void Read(BinaryReader reader)
         {
-            base.Read(reader);
+            base.Read(reader); // Вызываем чтение базового класс (координаты, цвет)
 
             Radius = reader.ReadInt32();
         }
 
         public override void Write(BinaryWriter writer)
         {
-            base.Write(writer);
+            base.Write(writer); // Вызываем запись базового класса
 
             writer.Write(Radius);
         }

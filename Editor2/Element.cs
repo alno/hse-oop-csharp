@@ -10,23 +10,29 @@ namespace Editor1
 {
     abstract class Element
     {
-        public Panel UI = new Panel();
+        public Panel UI = new Panel(); // Интерфейс для элемента
 
-        public Int32 X;
+        // Координаты элемента
+        public Int32 X; 
         public Int32 Y;
 
+        // Цвет элемент - открытое свойство
         public Color Color
         {
             get { return color; }
             set { color = value; colorBox.BackColor = value; }
         }
 
+        // Контейнер на котором происходит отрисовка
         protected Control Container;
 
+        // Цвет элемента
         private Color color = Color.Green;
 
+        // Поле для выбора цвета
         private TextBox colorBox;
 
+        // Конструктор элемента
         public Element(Control container)
         {
             this.Container = container;
@@ -57,10 +63,13 @@ namespace Editor1
             Container.Refresh();
         }
 
+        // Метод перерисовки элемента
         public abstract void Draw( Graphics graphics );
 
+        // Метод проверки принадлежности точки фигуре
         public abstract bool Contains(int x, int y);
 
+        // Чтение элемента из файла
         public virtual void Read(BinaryReader reader)
         {
             X = reader.ReadInt32();
@@ -73,6 +82,7 @@ namespace Editor1
             Color = Color.FromArgb(r, g, b);
         }
 
+        // Запись элемента в файл
         public virtual void Write(BinaryWriter writer)
         {
             writer.Write(X);
