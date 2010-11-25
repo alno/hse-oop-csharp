@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StarSystem.Objects.CelestialBody" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\CelestialBody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSystem.Objects.CelestialSystem" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgBAAAAAAAQAAACQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\CelestialSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSystem.Objects.CelestialObject" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAgAAAAQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\CelestialObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSystem.Objects.Planet" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAgAgAAAAQAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Planet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSystem.Objects.PlanetSystem" Collapsed="true">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAACAAgAgAgAAAAQAQAAACQAAgQAAEAAAAAAAA=</HashCode>
+      <FileName>Objects\PlanetSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSystem.Objects.Star" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAgAgAAAAQAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Objects\Star.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarSystem.Objects.StarSystem" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAJAAAAAAAAgAAAAQAAAAACQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\StarSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.4" />
+</ClassDiagram>
