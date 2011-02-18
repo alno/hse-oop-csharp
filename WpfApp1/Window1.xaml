@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23.331" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Name="btUp" HorizontalAlignment="Left" Width="30" Click="btUp_Click">Up</Button>
+        <TextBox Name="tbAddress" Margin="40,0,40,0" />
+        <Button Name="btGo" HorizontalAlignment="Right" Width="30" Click="btGo_Click">Go</Button>
+        <TabControl Grid.Row="1" Margin="0,10,0,0" Name="tabControl">
+            <TabItem Header="List"><ListBox Name="listFiles" MouseDoubleClick="listFiles_MouseDoubleClick" /></TabItem>
+            <TabItem Header="Search">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="23.331" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="23.331" />
+                    </Grid.RowDefinitions>
+                    <Button HorizontalAlignment="Left" Name="btSearch" Width="50" Click="btSearch_Click">Search</Button>
+                    <TextBox Margin="60,0,0,0" Name="tbSearchTerm" />
+                    <ListBox Name="listSearchResults" Grid.Row="1" Margin="0,5,0,0" />
+                    <ProgressBar Name="progressSearch" Grid.Row="2" Margin="0,5,0,0" />
+                </Grid>
+            </TabItem>
+        </TabControl>        
+    </Grid>
+</Window>
